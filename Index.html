@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameVerse</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#161b22;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#00e5ff;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#007cf0,#00dfd8,#7928ca);
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.games{
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px cyan;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+height:140px;
+object-fit:cover;
+}
+
+.card h2{
+margin:15px 0;
+}
+
+.play{
+display:inline-block;
+padding:10px 25px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:20px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#161b22;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🎮 GameVerse</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Games</a>
+<a href="#">About</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Play Amazing Browser Games</h1>
+<p>No Download • Free • Instant Play</p>
+<a class="btn" href="#games">Explore Games</a>
+</section>
+
+<section class="games" id="games">
+
+<div class="card">
+<img src="https://picsum.photos/300/200?1">
+<h2>Minecraft</h2>
+<a class="play" href="https://eaglercraft.com/" target="_blank">Play</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/200?2">
+<h2>Krunker</h2>
+<a class="play" href="https://krunker.io/" target="_blank">Play</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/200?3">
+<h2>Shell Shockers</h2>
+<a class="play" href="https://shellshock.io/" target="_blank">Play</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/200?4">
+<h2>Slow Roads</h2>
+<a class="play" href="https://slowroads.io/" target="_blank">Play</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/200?5">
+<h2>PolyTrack</h2>
+<a class="play" href="https://polytrack.org/" target="_blank">Play</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/200?6">
+<h2>DeadShot</h2>
+<a class="play" href="https://deadshot.io/" target="_blank">Play</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 GameVerse | Made with ❤️
+</footer>
+
+</body>
+</html>
